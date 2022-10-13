@@ -76,6 +76,7 @@ def update_note(request, pk):
 
 @api_view(['DELETE'])
 def delete_note(request, pk):
+    """Git Test"""
     note = Note.objects.get(id=pk)
     note.delete()
     return Response('Note was deleted!')
